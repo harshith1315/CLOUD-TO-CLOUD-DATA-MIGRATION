@@ -95,3 +95,13 @@ To migrate a database from Azure to AWS using Azure Data Factory, you can follow
 
 Azure Data Factory simplifies the Azure-to-AWS database migration process by providing a visual interface, data integration capabilities, and scheduling options. It enables researchers to efficiently transfer databases between Azure and AWS, taking advantage of the features and services offered by both cloud platforms for their projects.
 
+#### SUMMARY
+In summary, there are three methods for migrating databases between Azure and AWS: using SQL Server Management Studio (SSMS) Wizard, CloudBasix, and Azure Data Factory.
+
+1. SSMS Wizard: With the SSMS Wizard, researchers can migrate databases between Azure and AWS by following a step-by-step process. It involves configuring the source and target database connections, selecting the objects to migrate, and validating the migration settings. The wizard simplifies the process and ensures a smooth transfer of database objects, data, and configurations.
+
+2. CloudBasix: CloudBasix is a cloud migration tool that streamlines the migration process between AWS and Azure. It simplifies complex tasks such as data mapping, transformation, and continuous data synchronization. Researchers can use CloudBasix to set up the migration project, configure the source and target database connections, and perform the migration while ensuring data integrity and minimal downtime.
+
+3. Azure Data Factory: Azure Data Factory provides a comprehensive data integration service for migrating databases between Azure and AWS. Researchers can create datasets representing the source and target databases, define pipelines to orchestrate the migration process, and configure activities for data extraction and loading. Azure Data Factory simplifies connectivity, monitoring, and execution of the migration, ensuring seamless data transfer between the two cloud platforms.
+
+Regardless of the chosen method, thorough planning, validation, and post-migration verification are essential to ensure the integrity and functionality of the migrated databases. By leveraging these migration tools, researchers can optimize their projects, harness the strengths of both Azure and AWS, and facilitate collaboration and innovation.
