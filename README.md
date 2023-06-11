@@ -21,3 +21,31 @@ There are primarily three types of database migrations which are involved in thi
 1. DATABASE MIGARTION BETWEEN AZURE TO AWS AND VISA VERSA USING SSMS(SQL Server Management Studio) WIZARD
 2. DATABASE MIGARTION BETWEEN AWS TO AZURE USING CLOUDBASIX
 3. DATABASE MIGARTION BETWEEN AZURE TO AWS USING DATA FACTORY
+
+#### 1. DATABASE MIGARTION BETWEEN AZURE TO AWS AND VISA VERSA USING SSMS(SQL Server Management Studio) WIZARD
+![image](https://github.com/harshith1315/CLOUD-TO-CLOUD-DATA-MIGRATION/assets/111886682/09328638-1a86-45dc-943d-f4bddf94a273)
+
+
+Migrating databases between Azure and AWS using SQL Server Management Studio (SSMS) Wizard is a popular method that simplifies the process and ensures a smooth transition. SSMS provides a user-friendly interface and a step-by-step wizard to guide users through the migration.
+
+To migrate a database from Azure to AWS using SSMS Wizard, you can follow these general steps:
+
+1. Prepare the Target Environment: Set up the AWS environment, including creating the target database and ensuring appropriate permissions and connectivity.
+
+2. Launch SSMS Wizard: Open SQL Server Management Studio and connect to the Azure database server.
+
+3. Choose the Migration Type: Select the "Deploy Database to Microsoft Azure SQL Database" option in SSMS Wizard.
+
+4. Specify the Source and Target Details: Provide the necessary information about the Azure database, such as server name, credentials, and the specific database to be migrated. Then, enter the target server details for AWS, including the server name, authentication, and target database name.
+
+5. Configure the Migration Settings: Configure migration-specific settings, such as choosing the objects to migrate (tables, stored procedures, views, etc.), specifying data transfer options, and selecting the appropriate schema creation options.
+
+6. Validate and Start the Migration: Review the summary of the migration settings and validate the configuration. If everything looks correct, initiate the migration process.
+
+7. Monitor the Migration Progress: SSMS Wizard will provide real-time progress updates during the migration, allowing you to monitor the status and track any potential errors or warnings.
+
+8. Verify the Migration: Once the migration is complete, validate the transferred database objects, data integrity, and functionality in the AWS environment.
+
+Migrating from AWS to Azure using SSMS Wizard follows a similar process. You would establish the target Azure environment, launch SSMS Wizard, select the appropriate migration type (e.g., "Deploy Database to Microsoft Azure SQL Database"), and provide the necessary source and target details specific to the AWS and Azure databases.
+
+By utilizing the SSMS Wizard for Azure-to-AWS or AWS-to-Azure database migration, researchers can leverage the intuitive interface, step-by-step guidance, and automation features to simplify the migration process and ensure a successful transition between the two cloud platforms.
