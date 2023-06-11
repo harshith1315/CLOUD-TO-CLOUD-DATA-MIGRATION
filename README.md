@@ -49,3 +49,49 @@ To migrate a database from Azure to AWS using SSMS Wizard, you can follow these 
 Migrating from AWS to Azure using SSMS Wizard follows a similar process. You would establish the target Azure environment, launch SSMS Wizard, select the appropriate migration type (e.g., "Deploy Database to Microsoft Azure SQL Database"), and provide the necessary source and target details specific to the AWS and Azure databases.
 
 By utilizing the SSMS Wizard for Azure-to-AWS or AWS-to-Azure database migration, researchers can leverage the intuitive interface, step-by-step guidance, and automation features to simplify the migration process and ensure a successful transition between the two cloud platforms.
+#### 2. DATABASE MIGARTION BETWEEN AWS TO AZURE USING CLOUDBASIX
+![image](https://github.com/harshith1315/CLOUD-TO-CLOUD-DATA-MIGRATION/assets/111886682/51f52f82-059e-4392-b27f-3ff17dcf496d)
+
+CloudBasix is a cloud migration tool that facilitates the seamless transfer of databases between AWS and Azure. It streamlines the process and simplifies the complexities involved in migrating databases across these cloud platforms.
+
+To migrate a database from AWS to Azure using CloudBasix, you can follow these general steps:
+
+1. Set up CloudBasix: Install and configure the CloudBasix migration tool, ensuring proper connectivity and authentication to both AWS and Azure environments.
+
+2. Create a Migration Project: Start a new migration project in CloudBasix and specify the source and target database details. Provide the necessary information, such as AWS database connection parameters and Azure database connection parameters.
+
+3. Select Migration Options: Choose the specific migration options based on your requirements. This may include selecting the database objects to migrate (tables, stored procedures, views, etc.), defining the migration schedule, and configuring any data transformation or mapping requirements.
+
+4. Configure Data Sync: Set up continuous data synchronization between the source and target databases to ensure minimal downtime during the actual migration process. This allows for real-time replication of changes made to the source database to the target database until the migration cut-over.
+
+5. Perform a Test Migration: Before the final migration, conduct a test migration to verify the process and identify any potential issues or errors. This helps ensure a smooth migration without impacting production databases.
+
+6. Perform the Final Migration: Once the test migration is successful, initiate the final migration process. CloudBasix will handle the transfer of database schema, tables, data, and other objects from the source AWS environment to the target Azure environment.
+
+7. Validate the Migration: After the migration is complete, thoroughly validate the migrated database in the Azure environment. Verify the data integrity, functionality, and any required post-migration tasks.
+
+CloudBasix simplifies the AWS-to-Azure database migration process by providing a user-friendly interface, automation capabilities, and continuous data synchronization. It minimizes the complexities and ensures a seamless transfer of databases between these two cloud platforms, enabling researchers to leverage the benefits and features of both AWS and Azure for their projects.
+
+#### 3. DATABASE MIGARTION BETWEEN AZURE TO AWS USING DATA FACTORY
+![image](https://github.com/harshith1315/CLOUD-TO-CLOUD-DATA-MIGRATION/assets/111886682/d4aeade3-a283-45c8-9d48-078db29d5f7a)
+
+Database migration between Azure and AWS can be efficiently performed using Azure Data Factory. Azure Data Factory is a cloud-based data integration service that simplifies the process of ingesting, transforming, and transferring data between different data sources, including databases.
+
+To migrate a database from Azure to AWS using Azure Data Factory, you can follow these general steps:
+
+1. Set up Azure Data Factory: Create an Azure Data Factory instance in your Azure subscription and configure it with the necessary permissions and connections.
+
+2. Define Source and Sink Datasets: Create datasets in Azure Data Factory to represent the source Azure database and the target AWS database. Specify the connection details for both databases, including server names, credentials, and database names.
+
+3. Create a Pipeline: Construct a pipeline in Azure Data Factory to orchestrate the database migration process. The pipeline should include activities that extract data from the source Azure database and load it into the target AWS database.
+
+4. Configure Data Copy Activity: Within the pipeline, add a Data Copy activity that specifies the source and sink datasets, mapping the source and target tables or collections. Configure the necessary data transformation or mapping, if required.
+
+5. Set up Linked Services: Configure Linked Services in Azure Data Factory to establish connectivity to both Azure and AWS environments. Linked Services define the connection properties and credentials needed to access the databases.
+
+6. Monitor and Execute the Pipeline: Execute the pipeline in Azure Data Factory to initiate the database migration process. Monitor the progress of the migration, ensuring that data is successfully transferred from Azure to AWS.
+
+7. Validate the Migration: Once the migration is complete, validate the migrated database in the AWS environment. Verify the integrity of the data, perform any necessary post-migration tasks, and ensure the functionality of the migrated database.
+
+Azure Data Factory simplifies the Azure-to-AWS database migration process by providing a visual interface, data integration capabilities, and scheduling options. It enables researchers to efficiently transfer databases between Azure and AWS, taking advantage of the features and services offered by both cloud platforms for their projects.
+
